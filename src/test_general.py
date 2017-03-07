@@ -1,12 +1,11 @@
 # Hello world
 import os
 
+from django.core.urlresolvers import reverse
 from django.test import Client
 from django.test import TestCase
 
 from src import settings
-
-print('Hello Wolrd')
 
 class SiteCanRun(TestCase):
 
