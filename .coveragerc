@@ -1,0 +1,15 @@
+# Coverage config file
+[run]
+source = src
+omit =
+	*/__init__.py
+	*/.local/*
+	*/migrations/*
+	*/migrations.py
+	*/management/*
+	*/tests/*
+	*/tests.py
+	env/
+	database/
+	cover/
+	static/
