@@ -6,8 +6,11 @@ python:
 install:
  - "pip install -r requirements.txt"
 
-before_script:
-  - "./manage.py makemigrations"
-  - "./manage.py migrate"
+#before_script:
+script:
+  - coverage run ./manage.py test
+  - coverage report
+  - coverage html -d cover
 
-script: ./manage.py test
+after_success:
+  - coveralls
