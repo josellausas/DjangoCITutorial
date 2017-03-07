@@ -5,4 +5,4 @@ python:
 
 install: "pip install -r requirements.txt"
 
-script: runme
+script: ./manage.py test
